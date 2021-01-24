@@ -115,6 +115,7 @@
 .heading {
     text-align: center;
     margin-top: 150px;
+    overflow: hidden;
 }
 
 .heading-menu {
@@ -181,8 +182,8 @@
 
 .box-2 {
     background-color:var(--blue-primary);
-    width: 500px;
-    height: 500px;
+    max-width: 500px;
+    max-height: 500px;
     margin-top: 50px;
     margin-bottom: 50px;
     flex: 1;
@@ -197,13 +198,12 @@
 .info-user-1 {
     margin-top: 25px;
     margin-left: 25px;
-    width: 240px;
+    max-width: 240px;
     height: 90%;
 }
 
 .info-user-2 {
-    float: right;
-    width: 240px;
+    max-width: 240px;
     margin-top: 25px;
     margin-right: 25px;
     height: 90%;
@@ -211,7 +211,7 @@
 
 .info-user-3 {
     text-align: center;
-    margin: 50px 25px;
+    margin: 60px 25px;
     width: 450px;
 }
 
@@ -220,6 +220,8 @@
     font-size: 25px;
     color: white;
 }
+
+/* Media Query */
 
 @media (max-width: 815px) {
     .heading h1 {
@@ -310,14 +312,6 @@
 }
 
 @media (max-width: 600px) {
-    .info-user-1 {
-        width: 100px;
-    }
-    
-    .info-user-2 {
-        width: 100px;
-    }
-    
     .info-user-3 {
         width: 250px;
     }
@@ -350,13 +344,71 @@
 @media (max-width: 540px) {
     .box-1 {
         background-color: var(--blue-secondary);
-        width: 185px;
+        max-width: 185px;
     }
 
     .swiper-container {
-        width: 185px;
+        max-width: 185px;
         margin: auto;
     }
+}
+
+@media (max-width: 435px) {
+    .heading {
+        overflow: hidden;
+    }
+
+    .heading h1 {
+        font-size: 8.0rem;
+        line-height: 60%;
+        height: 200px;
+    }
+
+    .current-page {
+        margin-top: -200px;
+        margin-right: -160px;
+    }
+
+    .current-page a {
+        font-size: 1.2rem;
+    }
+
+    .heading-menu a {
+        font-size: 0.8rem;
+    }
+
+    .boxes {
+        flex-direction: column;
+    }
+
+    .box-1 {
+        max-width: 500px;
+    }
+
+    .box-2 {
+        margin-top: 0px;
+    }
+
+    .info-user-2 {
+        text-align: right;
+    }
+
+    .info-user-3 {
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+
+    .last-icon{
+        margin-bottom: 25px;
+    }
+
+    .swiper-container {
+        margin-bottom: 35px;
+        max-width: 475px;
+        max-height: 500px;
+        background-size: contain;
+    }
+
 }
 
 
