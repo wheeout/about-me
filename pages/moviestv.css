@@ -302,3 +302,70 @@ h2 {
         font-size: 1.0rem;
     }
 }
+
+@media (max-width: 435px) {
+    .heading {
+        overflow: hidden;
+    }
+
+    .heading h1 {
+        font-size: 8.0rem;
+        line-height: 60%;
+        height: 200px;
+    }
+
+    .current-page {
+        margin-top: -200px;
+        margin-right: -85px;
+    }
+
+    .current-page a {
+        font-size: 1.1rem;
+    }
+
+    .heading-menu a {
+        font-size: 0.8rem;
+    }
+
+    .boxes {
+        display: inline-block;
+    }
+
+    .box-2 {
+        margin-top: 350px;
+    }
+
+    .box-3 {
+        margin-top: -610px;
+        height: 350px;
+    }
+
+    .box-4 {
+        margin-top: 225px;
+        height: 275px;
+    }
+
+     h1, h2 {
+        padding-top: 20px;
+        padding-bottom: 5px;
+    }
+}
+
+@media (max-width: 320px) {
+    .heading h1 {
+        font-size: 7.0rem;
+    }
+
+    .current-page a {
+        font-size: 0.9rem;
+    }
+
+    .box-3 {
+        height: 360px;
+    }
+
+    .box-4 {
+        margin-top: 215px;
+        height: 275px;
+    }
+}
